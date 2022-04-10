@@ -1,0 +1,13 @@
+package Package_Program;
+
+public class TestaVariaveis {
+	public static void main() {
+		System.out.println("ola novo teste");
+		
+		int idade;
+		idade = (int) 37.5;
+		
+		
+	}
+
+}
