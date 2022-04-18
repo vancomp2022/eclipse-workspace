@@ -1,0 +1,2 @@
+module AM_enum {
+}

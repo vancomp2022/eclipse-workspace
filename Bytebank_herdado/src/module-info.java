@@ -1,0 +1,2 @@
+module Bytebank_herdado {
+}
