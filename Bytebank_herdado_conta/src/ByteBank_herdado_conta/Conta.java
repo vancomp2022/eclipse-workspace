@@ -1,6 +1,8 @@
 package ByteBank_herdado_conta;
+import Javapilha.SaldoInsuficienteException;
 
 public abstract class Conta{
+	
 	protected double saldo;
 	private	int agencia;
 	private int numero;
@@ -26,15 +28,15 @@ public abstract class Conta{
 //	}
 //	
 	
-	public boolean sacar(double valor){
+	public void sacar(double valor) throws ByteBank_herdado_conta.SaldoInsuficienteException{
 		
 		if(this.saldo < valor) 
 		{
-			return false;
+			 throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}else
 		{
 			this.saldo -= valor;
-			return true;
+
 		}
 		
 	}

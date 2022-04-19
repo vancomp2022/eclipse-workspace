@@ -1,4 +1,4 @@
-package ByteBank_herdado_conta;
+package Package_Program;
 
 public class ContaCorrente extends Conta implements Tributavel {
 
